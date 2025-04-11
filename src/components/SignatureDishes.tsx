@@ -1,0 +1,95 @@
+
+import { Button } from "@/components/ui/button";
+import { ChevronRight } from "lucide-react";
+
+const dishes = [
+  {
+    id: 1,
+    name: "Truffle Risotto",
+    description: "Creamy arborio rice with seasonal truffles, parmesan, and herbs",
+    image: "https://images.unsplash.com/photo-1676968538496-0423211288e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1349&q=80",
+    categories: ["Vegetarian", "Italian"]
+  },
+  {
+    id: 2,
+    name: "Herb-Crusted Salmon",
+    description: "Wild-caught salmon with a crispy herb crust, served with roasted vegetables",
+    image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    categories: ["Seafood", "Healthy"]
+  },
+  {
+    id: 3,
+    name: "Chocolate Soufflé",
+    description: "Decadent chocolate soufflé with a molten center, served with vanilla bean ice cream",
+    image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+    categories: ["Dessert", "French"]
+  },
+  {
+    id: 4,
+    name: "Seasonal Vegetable Tart",
+    description: "Flaky pastry filled with seasonal vegetables, goat cheese, and fresh herbs",
+    image: "https://images.unsplash.com/photo-1619221882220-947b3d3c8427?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    categories: ["Vegetarian", "French"]
+  }
+];
+
+const SignatureDishes = () => {
+  return (
+    <section className="py-16 px-6 md:px-12" id="dishes">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold font-outfit mb-4">
+              <span className="text-gradient">Signature Dishes</span>
+            </h2>
+            <p className="text-chef-charcoal/80 max-w-xl">
+              Iconic creations that showcase my culinary style and philosophy, featuring seasonal ingredients and innovative techniques.
+            </p>
+          </div>
+          <Button variant="ghost" className="text-chef-terracotta mt-4 md:mt-0 self-start md:self-auto">
+            View All Recipes <ChevronRight className="w-4 h-4 ml-1" />
+          </Button>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {dishes.map((dish, index) => (
+            <div 
+              key={dish.id} 
+              className="bento-card group overflow-hidden animate-scale-in"
+              style={{ animationDelay: `${0.1 + index * 0.1}s` }}
+            >
+              <div className="h-48 overflow-hidden rounded-xl mb-4">
+                <img 
+                  src={dish.image} 
+                  alt={dish.name} 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="flex gap-2 mb-2">
+                {dish.categories.map((category) => (
+                  <span key={category} className="text-xs font-medium px-2 py-1 rounded-full bg-chef-cream text-chef-terracotta">
+                    {category}
+                  </span>
+                ))}
+              </div>
+              <h3 className="text-xl font-outfit font-semibold text-chef-charcoal mb-2">
+                {dish.name}
+              </h3>
+              <p className="text-chef-charcoal/70 text-sm mb-4">
+                {dish.description}
+              </p>
+              <Button 
+                variant="ghost" 
+                className="text-chef-terracotta hover:text-chef-coral hover:bg-chef-cream/50 p-0 h-auto"
+              >
+                View Recipe <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SignatureDishes;
