@@ -1,6 +1,5 @@
-
-import { Button } from "@/components/ui/button";
-import { ArrowDownCircle } from "lucide-react";
+import { Button, type ButtonProps } from "@/components/ui/button";
+import chefImage from "@/assets/chef-madhavi.jpg";
 
 const Hero = () => {
   return (
@@ -25,7 +24,9 @@ const Hero = () => {
             <Button className="bg-chef-terracotta hover:bg-chef-coral text-white text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
               View My Work
             </Button>
-            <Button variant="outline" className="border-chef-terracotta text-chef-terracotta hover:bg-chef-terracotta/10 text-lg px-8 py-6 rounded-xl hover:-translate-y-1 transition-all duration-300">
+            <Button 
+              className="border border-chef-terracotta bg-transparent text-chef-terracotta hover:bg-chef-terracotta/10 text-lg px-8 py-6 rounded-xl hover:-translate-y-1 transition-all duration-300"
+            >
               Contact Me
             </Button>
           </div>
@@ -37,7 +38,7 @@ const Hero = () => {
             <div className="absolute -bottom-5 -right-5 w-32 h-32 bg-chef-coral rounded-full opacity-20 blur-lg"></div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-md max-h-md bg-chef-terracotta/10 rounded-full blur-3xl"></div>
             <img 
-              src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80" 
+              src={chefImage}
               alt="Chef Portrait" 
               className="w-full h-auto rounded-3xl object-cover shadow-2xl hover:shadow-[0_20px_60px_-10px_rgba(201,124,93,0.3)] transition-all duration-700"
             />
@@ -50,7 +51,6 @@ const Hero = () => {
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce duration-1000 cursor-pointer"
         aria-label="Scroll to About section"
       >
-        <ArrowDownCircle className="w-10 h-10 text-chef-terracotta" />
       </a>
     </section>
   );

@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="mb-6 md:mb-0">
             <a href="#" className="text-2xl font-bold font-outfit">
-              Chef<span className="text-chef-terracotta">Portfolio</span>
+              Chef <span className="text-chef-terracotta">Madhavi</span>
             </a>
             <p className="text-white/70 mt-2 max-w-sm">
               Crafting culinary experiences that delight the senses and create lasting memories.
@@ -118,7 +118,7 @@ const Footer = () => {
         
         <div className="pt-8 border-t border-white/10 text-center">
           <p className="text-white/70 text-sm">
-            © {new Date().getFullYear()} ChefPortfolio. All rights reserved.
+            © {new Date().getFullYear()} Chef Madhavi. All rights reserved.
           </p>
         </div>
       </div>

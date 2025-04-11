@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,7 +9,7 @@ const Navbar = () => {
     <nav className="w-full py-4 md:py-6 px-6 md:px-12 bg-white/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-chef-cream">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <a href="#" className="flex items-center">
-          <span className="text-xl md:text-2xl font-bold font-outfit text-chef-charcoal">Chef<span className="text-chef-terracotta">Portfolio</span></span>
+          <span className="text-xl md:text-2xl font-bold font-outfit text-chef-charcoal">Chef <span className="text-chef-terracotta">Madhavi</span></span>
         </a>
         
         {/* Desktop Menu */}
@@ -35,8 +34,7 @@ const Navbar = () => {
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
           <Button 
-            variant="ghost" 
-            size="icon" 
+            className="p-2 hover:bg-gray-100 rounded-full"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
