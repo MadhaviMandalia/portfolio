@@ -18,7 +18,7 @@ const Navbar = () => {
             About
           </a>
           <a href="#dishes" className="text-chef-charcoal hover:text-chef-terracotta font-medium transition-colors">
-            Signature Dishes
+            Dishes
           </a>
           <a href="#videos" className="text-chef-charcoal hover:text-chef-terracotta font-medium transition-colors">
             Recipe Videos
@@ -26,9 +26,9 @@ const Navbar = () => {
           <a href="#contact" className="text-chef-charcoal hover:text-chef-terracotta font-medium transition-colors">
             Contact
           </a>
-          <Button className="bg-chef-terracotta hover:bg-chef-coral text-white">
+          {/* <Button className="bg-chef-terracotta hover:bg-chef-coral text-white">
             Book a Table
-          </Button>
+          </Button> */}
         </div>
         
         {/* Mobile Menu Toggle */}
