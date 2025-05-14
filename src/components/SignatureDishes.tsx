@@ -5,30 +5,30 @@ import { ChevronRight } from "lucide-react";
 const dishes = [
   {
     id: 1,
-    name: "Truffle Risotto",
-    description: "Creamy arborio rice with seasonal truffles, parmesan, and herbs",
-    image: "https://images.unsplash.com/photo-1676968538496-0423211288e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1349&q=80",
-    categories: ["Vegetarian", "Italian"]
+    name: "Ponta Bhat",
+    description: "A traditional Indian dish made with rice, lentils, and vegetables, cooked in a pressure cooker.",
+    image: "src/images/ponta_rice.jpg",
+    categories: ["Vegetarian", "Indian"]
   },
   {
     id: 2,
-    name: "Herb-Crusted Salmon",
-    description: "Wild-caught salmon with a crispy herb crust, served with roasted vegetables",
-    image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    categories: ["Seafood", "Healthy"]
+    name: "Vegetable Wrap",
+    description: "A healthy and easy-to-make wrap filled with a variety of vegetables, perfect for a quick and nutritious lunch.",
+    image: "src/images/wrap.jpg",
+    categories: ["Vegetarian", "Healthy"]
   },
   {
     id: 3,
-    name: "Chocolate Soufflé",
-    description: "Decadent chocolate soufflé with a molten center, served with vanilla bean ice cream",
-    image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+    name: "Noodles",
+    description: "A healthy and easy-to-make wrap filled with a variety of vegetables, perfect for a quick and nutritious lunch.",
+    image: "src/images/noodles.jpg",
     categories: ["Dessert", "French"]
   },
   {
     id: 4,
     name: "Seasonal Vegetable Tart",
     description: "Flaky pastry filled with seasonal vegetables, goat cheese, and fresh herbs",
-    image: "https://images.unsplash.com/photo-1619221882220-947b3d3c8427?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    image: "src/images/ponta_rice.jpg",
     categories: ["Vegetarian", "French"]
   }
 ];
