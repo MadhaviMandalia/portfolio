@@ -20,7 +20,7 @@ const BentoGrid = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-6 auto-rows-minmax(100px, auto)">
           {/* About Card - Large */}
-          <div className="col-span-1 md:col-span-2 lg:col-span-3 row-span-2 bento-card group animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.1s" }}>
+          <div className="col-span-1 md:col-span-3 lg:col-span-4 row-span-2 bento-card group animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.1s" }}>
             <h3 className="text-2xl font-outfit font-semibold mb-4 text-chef-charcoal flex items-center gap-2">
               <ChefHat className="text-chef-terracotta" />
               {journey.title}
@@ -102,9 +102,9 @@ const BentoGrid = () => {
 
           <div className="col-span-1 md:col-span-1 lg:col-span-2 row-span-1 bento-card backdrop-blur-sm bg-chef-sage/20 group hover:bg-chef-sage/30 transition-colors animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.6s" }}>
             <div className="flex flex-col h-full items-center justify-center text-center">
-              <Youtube className="text-chef-terracotta w-10 h-10 mb-3 group-hover:scale-110 transition-transform" />
+              <Instagram className="text-chef-terracotta w-10 h-10 mb-3 group-hover:scale-110 transition-transform" />
               <h3 className="text-lg font-outfit font-semibold text-chef-charcoal">
-                Subscribe to My Channel
+                Follow Me on Instagram
               </h3>
               <p className="text-chef-charcoal/70 text-sm">
                 Culinary videos and cooking tips
