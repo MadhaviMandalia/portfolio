@@ -31,7 +31,7 @@ const Footer = () => {
           </button>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 py-8 border-t border-white/10">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 py-8 border-t border-white/10">
           <div>
             <h3 className="text-lg font-outfit font-semibold mb-4">Navigation</h3>
             <ul className="space-y-2">
@@ -114,7 +114,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
         
         <div className="pt-8 border-t border-white/10 text-center">
           <p className="text-white/70 text-sm">

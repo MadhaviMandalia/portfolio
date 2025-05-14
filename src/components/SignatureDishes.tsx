@@ -5,9 +5,9 @@ import { ChevronRight } from "lucide-react";
 const dishes = [
   {
     id: 1,
-    name: "Ponta Bhat",
-    description: "A traditional Indian dish made with rice, lentils, and vegetables, cooked in a pressure cooker.",
-    image: "src/images/ponta_rice.jpg",
+    name: "Panta Bhat",
+    description: "Panta Bhat is a refreshing Bengali dish made with leftover rice soaked in water, typically served cold with mustard oil, chilies, and accompaniments.",
+    image: "src/images/panta_bhat.jpg",
     categories: ["Vegetarian", "Indian"]
   },
   {
@@ -28,7 +28,7 @@ const dishes = [
     id: 4,
     name: "Seasonal Vegetable Tart",
     description: "Flaky pastry filled with seasonal vegetables, goat cheese, and fresh herbs",
-    image: "src/images/ponta_rice.jpg",
+    image: "src/images/panta_bhat.jpg",
     categories: ["Vegetarian", "French"]
   }
 ];
@@ -41,15 +41,15 @@ const SignatureDishes = () => {
           <div>
             <span className="px-4 py-1 bg-chef-cream text-chef-terracotta rounded-full text-sm font-medium mb-4 inline-block">Culinary Creations</span>
             <h2 className="text-3xl md:text-4xl font-bold font-outfit mb-4">
-              <span className="text-gradient">Signature Dishes</span>
+              <span className="text-gradient">Dishes</span>
             </h2>
             <p className="text-chef-charcoal/80 max-w-xl">
               Iconic creations that showcase my culinary style and philosophy, featuring seasonal ingredients and innovative techniques.
             </p>
           </div>
-          <Button variant="ghost" className="text-chef-terracotta hover:text-chef-coral mt-4 md:mt-0 self-start md:self-auto group">
+          {/* <Button variant="ghost" className="text-chef-terracotta hover:text-chef-coral mt-4 md:mt-0 self-start md:self-auto group">
             View All Recipes <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          </Button> */}
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -80,12 +80,12 @@ const SignatureDishes = () => {
               <p className="text-chef-charcoal/70 text-sm mb-4">
                 {dish.description}
               </p>
-              <Button 
+              {/* <Button 
                 variant="ghost" 
                 className="text-chef-terracotta hover:text-chef-coral hover:bg-chef-cream/50 p-0 h-auto group-hover:-translate-y-1 transition-all duration-300"
               >
                 View Recipe <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              </Button> */}
             </div>
           ))}
         </div>
