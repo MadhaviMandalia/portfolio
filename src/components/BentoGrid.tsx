@@ -31,7 +31,7 @@ const BentoGrid = () => {
           </div>
           
           {/* Instagram Video Preview - Updated to portrait aspect ratio */}
-          <div className="col-span-1 md:col-span-2 lg:col-span-3 row-span-2 bento-card overflow-hidden group animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.2s" }}>
+          {/* <div className="col-span-1 md:col-span-2 lg:col-span-3 row-span-2 bento-card overflow-hidden group animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.2s" }}>
             <div className="relative h-full">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-full h-full aspect-[9/16] max-w-[400px] mx-auto relative overflow-hidden rounded-2xl">
@@ -44,7 +44,7 @@ const BentoGrid = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           
           {/* Stats Card - Updated with gradient */}
           <div className="col-span-1 md:col-span-2 row-span-1 bento-card bg-gradient-to-br from-chef-terracotta via-chef-coral to-chef-saffron/80 animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.3s" }}>
@@ -53,16 +53,12 @@ const BentoGrid = () => {
             </h3>
             <div className="flex flex-col md:flex-row justify-between gap-4">
               <div>
-                <p className="text-3xl font-bold font-outfit text-white">15+</p>
+                <p className="text-3xl font-bold font-outfit text-white">18</p>
                 <p className="text-white/80 text-sm">Years Experience</p>
               </div>
               <div>
                 <p className="text-3xl font-bold font-outfit text-white">200+</p>
-                <p className="text-white/80 text-sm">Recipes Created</p>
-              </div>
-              <div>
-                <p className="text-3xl font-bold font-outfit text-white">50+</p>
-                <p className="text-white/80 text-sm">Cooking Classes</p>
+                <p className="text-white/80 text-sm">Recipes Uploaded</p>
               </div>
             </div>
           </div>
@@ -73,33 +69,13 @@ const BentoGrid = () => {
               <Star className="text-chef-saffron w-8 h-8" />
             </div>
             <h3 className="text-xl font-outfit font-semibold mb-1 text-center text-chef-charcoal">
-              Award-Winning Chef
+              Diploma in Plant-Based Culinary Arts
             </h3>
             <p className="text-chef-charcoal/70 text-center">
-              James Beard Award Finalist 2023
+              Student at Le Cordon Bleu Dusit
             </p>
           </div>
-          
-          {/* Signature Dish Preview */}
-          <div className="col-span-1 md:col-span-1 lg:col-span-2 row-span-1 bento-card group overflow-hidden animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.5s" }}>
-            <div className="relative h-full">
-              <img 
-                src="https://images.unsplash.com/photo-1546833998-877b37c2e5c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
-                alt="Signature Dish" 
-                className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-              <div className="absolute bottom-4 left-4 right-4">
-                <h3 className="text-lg font-outfit font-semibold text-white">
-                  Herb-Crusted Salmon
-                </h3>
-                <div className="flex items-center gap-2 text-white/80 text-sm">
-                  <Clock className="w-4 h-4" /> 
-                  <span>30 minutes</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        
           
           {/* YouTube Link - Updated with glassmorphism */}
           <div className="col-span-1 md:col-span-1 lg:col-span-2 row-span-1 bento-card backdrop-blur-sm bg-chef-sage/20 group hover:bg-chef-sage/30 transition-colors animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.6s" }}>
@@ -109,19 +85,31 @@ const BentoGrid = () => {
                 Subscribe to My Channel
               </h3>
               <p className="text-chef-charcoal/70 text-sm">
-                Weekly recipe videos & cooking tips
+                Culinary videos and cooking tips
               </p>
             </div>
           </div>
           
           {/* Cooking Philosophy - Updated with gradient border */}
-          <div className="col-span-1 md:col-span-2 row-span-1 bento-card border-2 border-gradient-to-r from-chef-saffron to-chef-terracotta animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.7s", background: "linear-gradient(white, white) padding-box, linear-gradient(to right, #F4B400, #C97C5D) border-box", borderColor: "transparent" }}>
+          <div className="col-span-1 md:col-span-2 row-span-1 bento-card border-2 from-chef-saffron to-chef-terracotta animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.7s", background: "linear-gradient(white, white) padding-box, linear-gradient(to right, #F4B400, #C97C5D) border-box", borderColor: "transparent" }}>
             <h3 className="text-xl font-outfit font-semibold mb-2 text-chef-charcoal">
               {philosophy.title}
             </h3>
             <p className="text-chef-charcoal/80">
               {philosophy.description}
             </p>
+          </div>
+
+          <div className="col-span-1 md:col-span-1 lg:col-span-2 row-span-1 bento-card backdrop-blur-sm bg-chef-sage/20 group hover:bg-chef-sage/30 transition-colors animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.6s" }}>
+            <div className="flex flex-col h-full items-center justify-center text-center">
+              <Youtube className="text-chef-terracotta w-10 h-10 mb-3 group-hover:scale-110 transition-transform" />
+              <h3 className="text-lg font-outfit font-semibold text-chef-charcoal">
+                Subscribe to My Channel
+              </h3>
+              <p className="text-chef-charcoal/70 text-sm">
+                Culinary videos and cooking tips
+              </p>
+            </div>
           </div>
         </div>
       </div>
