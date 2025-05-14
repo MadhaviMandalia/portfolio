@@ -12,6 +12,15 @@ import {
   Youtube 
 } from "lucide-react";
 
+
+const email = "madhavi.mandalia.chef@gmail.com";
+const links = {
+  instagram: "https://www.instagram.com/chefmadhavi",
+  facebook: "https://www.facebook.com/madhavi.mandalia.chef/",
+  twitter: "https://www.twitter.com/madhavi.mandalia.chef/",
+  youtube: "https://youtube.com/@chefmadhavi",
+}
+
 const Contact = () => {
   return (
     <section className="py-16 px-6 md:px-12" id="contact">
@@ -21,60 +30,6 @@ const Contact = () => {
         </h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="animate-fade-in">
-            <h3 className="text-2xl font-outfit font-semibold mb-6 text-chef-charcoal">
-              Send Me a Message
-            </h3>
-            <form className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-chef-charcoal mb-1">
-                    Name
-                  </label>
-                  <Input 
-                    id="name" 
-                    placeholder="Your name" 
-                    className="border-chef-cream focus-visible:ring-chef-terracotta"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-chef-charcoal mb-1">
-                    Email
-                  </label>
-                  <Input 
-                    id="email" 
-                    type="email" 
-                    placeholder="Your email" 
-                    className="border-chef-cream focus-visible:ring-chef-terracotta"
-                  />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-chef-charcoal mb-1">
-                  Subject
-                </label>
-                <Input 
-                  id="subject" 
-                  placeholder="Message subject" 
-                  className="border-chef-cream focus-visible:ring-chef-terracotta"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-chef-charcoal mb-1">
-                  Message
-                </label>
-                <Textarea 
-                  id="message" 
-                  placeholder="Your message" 
-                  rows={5}
-                  className="border-chef-cream focus-visible:ring-chef-terracotta resize-none"
-                />
-              </div>
-              <Button className="bg-chef-terracotta hover:bg-chef-coral text-white w-full md:w-auto">
-                Send Message
-              </Button>
-            </form>
-          </div>
           
           <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <h3 className="text-2xl font-outfit font-semibold mb-6 text-chef-charcoal">
@@ -88,11 +43,11 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium text-chef-charcoal">Email</h4>
                   <a href="mailto:chef@example.com" className="text-chef-charcoal/70 hover:text-chef-terracotta">
-                    chef@example.com
+                    {email}
                   </a>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              {/* <div className="flex items-start gap-4">
                 <div className="bg-chef-cream p-3 rounded-full text-chef-terracotta">
                   <Phone className="w-5 h-5" />
                 </div>
@@ -102,8 +57,8 @@ const Contact = () => {
                     +1 (234) 567-890
                   </a>
                 </div>
-              </div>
-              <div className="flex items-start gap-4">
+              </div> */}
+              {/* <div className="flex items-start gap-4">
                 <div className="bg-chef-cream p-3 rounded-full text-chef-terracotta">
                   <MapPin className="w-5 h-5" />
                 </div>
@@ -113,7 +68,7 @@ const Contact = () => {
                     123 Culinary Street,<br /> Foodville, FC 12345
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
             
             <h3 className="text-xl font-outfit font-semibold mb-4 text-chef-charcoal">
@@ -121,28 +76,28 @@ const Contact = () => {
             </h3>
             <div className="flex gap-4">
               <a 
-                href="#" 
+                href={links.instagram} 
                 className="bg-chef-cream p-3 rounded-full text-chef-terracotta hover:bg-chef-terracotta hover:text-white transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href={links.facebook} 
                 className="bg-chef-cream p-3 rounded-full text-chef-terracotta hover:bg-chef-terracotta hover:text-white transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
+              {/* <a 
+                href={links.twitter} 
                 className="bg-chef-cream p-3 rounded-full text-chef-terracotta hover:bg-chef-terracotta hover:text-white transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
-              </a>
+              </a> */}
               <a 
-                href="#" 
+                href={links.youtube} 
                 className="bg-chef-cream p-3 rounded-full text-chef-terracotta hover:bg-chef-terracotta hover:text-white transition-colors"
                 aria-label="YouTube"
               >
