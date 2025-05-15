@@ -1,34 +1,38 @@
 
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import pantaBhat from "@/assets/panta_bhat.jpg";
+import wrap from "@/assets/wrap.jpg";
+import falafel from "@/assets/falafel.jpeg";
+import miangkhum from "@/assets/miangkhum_with_flex_seeds_and_sunflower_seeds.jpg";
 
 const dishes = [
   {
     id: 1,
     name: "Panta Bhat",
     description: "Panta Bhat is a refreshing Bengali dish made with leftover rice soaked in water, typically served cold with mustard oil, chilies, and accompaniments.",
-    image: "src/images/panta_bhat.jpg",
+    image: pantaBhat,
     categories: ["Vegetarian", "Indian"]
   },
   {
     id: 2,
     name: "Vegetable Wrap",
     description: "A healthy and easy-to-make wrap filled with a variety of vegetables, perfect for a quick and nutritious lunch.",
-    image: "src/images/wrap.jpg",
+    image: wrap,
     categories: ["Vegetarian", "Healthy"]
   },
   {
     id: 3,
     name: "Falafel",
     description: "A healthy and easy-to-make wrap filled with a variety of vegetables, perfect for a quick and nutritious lunch.",
-    image: "src/images/falafel.jpeg",
+    image: falafel,
     categories: ["Dessert", "French"]
   },
   {
     id: 4,
     name: "Maingkhum",
     description: "Flaky pastry filled with seasonal vegetables, goat cheese, and fresh herbs",
-    image: "src/images/miangkhum_with_flex_seeds_and_sunflower_seeds.jpg",
+    image: miangkhum,
     categories: ["Vegetarian", "French"]
   }
 ];
