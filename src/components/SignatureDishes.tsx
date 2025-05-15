@@ -19,16 +19,16 @@ const dishes = [
   },
   {
     id: 3,
-    name: "Noodles",
+    name: "Falafel",
     description: "A healthy and easy-to-make wrap filled with a variety of vegetables, perfect for a quick and nutritious lunch.",
-    image: "src/images/noodles.jpg",
+    image: "src/images/falafel.jpeg",
     categories: ["Dessert", "French"]
   },
   {
     id: 4,
-    name: "Seasonal Vegetable Tart",
+    name: "Maingkhum",
     description: "Flaky pastry filled with seasonal vegetables, goat cheese, and fresh herbs",
-    image: "src/images/panta_bhat.jpg",
+    image: "src/images/miangkhum_with_flex_seeds_and_sunflower_seeds.jpg",
     categories: ["Vegetarian", "French"]
   }
 ];

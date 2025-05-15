@@ -12,8 +12,8 @@ const Hero = () => {
         <div className="order-2 lg:order-1 animate-fade-in" style={{ animationDelay: "0.2s" }}>
           {/* <span className="px-4 py-1 bg-chef-cream text-chef-terracotta rounded-full text-sm font-medium mb-6 inline-block">Award-Winning Chef</span> */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-outfit mb-6 leading-tight">
-            <span className="text-gradient">Crafting Culinary</span> <br />
-            Magic For Your Palate
+            <span className="text-gradient">Infusing Culinary</span> <br />
+            Magic into Your Palate
           </h1>
           <p className="text-lg md:text-md text-chef-charcoal/80 mb-8 max-w-xl">
           Passionate home cook with 18 years of experience, currently pursuing a Diploma in Plant-Based Culinary Arts at Le Cordon Bleu Dusit, Bangkok, and a content creator specializing in vegetarian recipes.
