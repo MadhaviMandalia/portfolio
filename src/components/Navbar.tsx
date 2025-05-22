@@ -59,7 +59,7 @@ const Navbar = () => {
               className="text-chef-charcoal hover:text-chef-terracotta py-2 font-medium transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Signature Dishes
+              Dishes
             </a>
             <a 
               href="#videos" 

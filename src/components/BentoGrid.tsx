@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Instagram, Youtube, ChefHat, ArrowRight, Star, Clock } from "lucide-react";
+import md1 from "@/assets/md-p1-cf.jpeg";
+import md2 from "@/assets/md-p2-cf.jpeg";
+import md5 from "@/assets/md-p5-cf.jpeg";
 
 const journey = {
   title: "My Culinary Journey",
@@ -49,12 +52,12 @@ const BentoGrid = () => {
           {/* Stats Card - Updated with gradient */}
           <div className="col-span-1 md:col-span-2 row-span-1 bento-card bg-gradient-to-br from-chef-terracotta via-chef-coral to-chef-saffron/80 animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.3s" }}>
             <h3 className="text-xl font-outfit font-semibold mb-3 text-white">
-              Chef Experience
+              Experience
             </h3>
             <div className="flex flex-col md:flex-row justify-between gap-4">
               <div>
-                <p className="text-3xl font-bold font-outfit text-white">18</p>
-                <p className="text-white/80 text-sm">Years Experience</p>
+                <p className="text-3xl font-bold font-outfit text-white">18+</p>
+                <p className="text-white/80 text-sm">Home Cooking Experience</p>
               </div>
               <div>
                 <p className="text-3xl font-bold font-outfit text-white">200+</p>
@@ -78,38 +81,48 @@ const BentoGrid = () => {
         
           
           {/* YouTube Link - Updated with glassmorphism */}
-          <div className="col-span-1 md:col-span-1 lg:col-span-2 row-span-1 bento-card backdrop-blur-sm bg-chef-sage/20 group hover:bg-chef-sage/30 transition-colors animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.6s" }}>
-            <div className="flex flex-col h-full items-center justify-center text-center">
-              <Youtube className="text-chef-terracotta w-10 h-10 mb-3 group-hover:scale-110 transition-transform" />
-              <h3 className="text-lg font-outfit font-semibold text-chef-charcoal">
-                Subscribe to My Channel
-              </h3>
-              <p className="text-chef-charcoal/70 text-sm">
-                Culinary videos and cooking tips
-              </p>
-            </div>
+          <div className="col-span-1 md:col-span-1 lg:col-span-2 row-span-1 bento-card backdrop-blur-sm bg-chef-sage/20 group hover:bg-chef-sage/30 transition-colors animate-scale-in hover:shadow-xl transition-all duration-500 h-full w-full p-0" style={{ animationDelay: "0.6s" }}>
+            <img 
+              src={md1} 
+              className="w-full h-full object-cover"
+              alt="Chef Madhavi" 
+            />
           </div>
           
           {/* Cooking Philosophy - Updated with gradient border */}
-          <div className="col-span-1 md:col-span-2 row-span-1 bento-card border-2 from-chef-saffron to-chef-terracotta animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.7s", background: "linear-gradient(white, white) padding-box, linear-gradient(to right, #F4B400, #C97C5D) border-box", borderColor: "transparent" }}>
+          {/* <div className="col-span-1 md:col-span-2 row-span-1 bento-card border-2 from-chef-saffron to-chef-terracotta animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.7s", background: "linear-gradient(white, white) padding-box, linear-gradient(to right, #F4B400, #C97C5D) border-box", borderColor: "transparent" }}>
             <h3 className="text-xl font-outfit font-semibold mb-2 text-chef-charcoal">
               {philosophy.title}
             </h3>
             <p className="text-chef-charcoal/80">
               {philosophy.description}
             </p>
+          </div> */}
+
+          <div className="col-span-1 md:col-span-2 row-span-1 bento-card border-2 from-chef-saffron to-chef-terracotta animate-scale-in hover:shadow-xl transition-all duration-500 w-full p-0" style={{ animationDelay: "0.7s", background: "linear-gradient(white, white) padding-box border-box", borderColor: "transparent" }}>
+          <img 
+              src={md5} 
+              className="w-full h-full object-cover"
+              alt="Chef Madhavi" 
+            />
           </div>
 
-          <div className="col-span-1 md:col-span-1 lg:col-span-2 row-span-1 bento-card backdrop-blur-sm bg-chef-sage/20 group hover:bg-chef-sage/30 transition-colors animate-scale-in hover:shadow-xl transition-all duration-500" style={{ animationDelay: "0.6s" }}>
-            <div className="flex flex-col h-full items-center justify-center text-center">
-              <Instagram className="text-chef-terracotta w-10 h-10 mb-3 group-hover:scale-110 transition-transform" />
-              <h3 className="text-lg font-outfit font-semibold text-chef-charcoal">
-                Follow Me on Instagram
-              </h3>
-              <p className="text-chef-charcoal/70 text-sm">
-                Culinary videos and cooking tips
-              </p>
-            </div>
+          <div className="col-span-1 md:col-span-1 lg:col-span-2 row-span-1 bento-card backdrop-blur-sm bg-chef-sage/20 group hover:bg-chef-sage/30 transition-colors animate-scale-in hover:shadow-xl transition-all duration-500 h-full w-full p-0" style={{ animationDelay: "0.6s" }}>
+            <img 
+              src={md2} 
+              className="w-full h-full object-cover"
+              alt="Chef Madhavi" 
+            />
+          </div>
+
+          {/* Cooking Philosophy - Updated with gradient border */}
+          <div className="col-span-1 md:col-span-3 lg:col-span-6 row-span-2 bento-card group animate-scale-in hover:shadow-xl transition-all duration-500 py-8" style={{ animationDelay: "0.7s", background: "linear-gradient(white, white) padding-box, linear-gradient(to right, #F4B400, #C97C5D) border-box", borderColor: "transparent" }}>
+            <h3 className="text-xl font-outfit font-semibold mb-4 text-chef-charcoal">
+              {philosophy.title}
+            </h3>
+            <p className="text-chef-charcoal/80">
+              {philosophy.description}
+            </p>
           </div>
         </div>
       </div>

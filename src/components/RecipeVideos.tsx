@@ -4,26 +4,28 @@ import { Play, Clock, ChevronRight } from "lucide-react";
 const videos = [
   {
     id: 1,
-    title: "Mix Masala Sprouts",
+    title: "High Protein Nutrition Legumes",
     thumbnail: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
     views: "124K",
     youtubeId: "zqZeIk05CiQ"
   },
   {
     id: 2,
-    title: "Sattu Jaggery Laddu",
+    title: "Healthy Nutritious Lentils Pancakes",
     thumbnail: "https://images.unsplash.com/photo-1533089860892-a9b9ac6cd6b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     views: "98K",
-    youtubeId: "P7IEVJtOY4Q"
+    youtubeId: "bZZqNpcMigQ"
   },
   {
     id: 3,
-    title: "Dahi Bhalla",
+    title: "Fermented Lentils Fritters With Sweet and Sour Sauce",
     thumbnail: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
     views: "203K",
     youtubeId: "GOtaCIWu57Q"
   }
 ];
+
+const yt = "https://youtube.com/@chefmadhavi"
 
 const RecipeVideos = () => {
   return (
@@ -39,7 +41,7 @@ const RecipeVideos = () => {
               Step-by-step tutorials of my favorite recipes, cooking techniques, and kitchen tips. Subscribe to stay updated.
             </p>
           </div>
-          <Button variant="ghost" className="text-chef-terracotta hover:text-chef-coral mt-4 md:mt-0 self-start md:self-auto group">
+          <Button variant="ghost" onClick={() => window.open(yt, "_blank")} className="text-chef-terracotta hover:text-chef-coral mt-4 md:mt-0 self-start md:self-auto group">
             YouTube Channel <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>

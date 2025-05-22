@@ -6,6 +6,7 @@ import SignatureDishes from "@/components/SignatureDishes";
 import RecipeVideos from "@/components/RecipeVideos";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import MyDishes from "@/components/MyDishes";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <Hero />
       <BentoGrid />
       <SignatureDishes />
+      {/* <MyDishes /> */}
       <RecipeVideos />
       <Contact />
       <Footer />

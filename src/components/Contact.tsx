@@ -9,7 +9,9 @@ import {
   Instagram, 
   Facebook, 
   Twitter, 
-  Youtube 
+  Youtube, 
+  Linkedin,
+  LinkedinIcon
 } from "lucide-react";
 
 
@@ -19,6 +21,7 @@ const links = {
   facebook: "https://www.facebook.com/madhavi.mandalia.chef/",
   twitter: "https://www.twitter.com/madhavi.mandalia.chef/",
   youtube: "https://youtube.com/@chefmadhavi",
+  linkedin: "https://www.linkedin.com/in/trivedi-madhavi/",
 }
 
 const Contact = () => {
@@ -75,6 +78,13 @@ const Contact = () => {
               Follow Me
             </h3>
             <div className="flex gap-4">
+            <a 
+                href={links.youtube} 
+                className="bg-chef-cream p-3 rounded-full text-chef-terracotta hover:bg-chef-terracotta hover:text-white transition-colors"
+                aria-label="YouTube"
+              >
+                <Youtube className="w-5 h-5" />
+              </a>
               <a 
                 href={links.instagram} 
                 className="bg-chef-cream p-3 rounded-full text-chef-terracotta hover:bg-chef-terracotta hover:text-white transition-colors"
@@ -83,11 +93,11 @@ const Contact = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
-                href={links.facebook} 
+                href={links.linkedin} 
                 className="bg-chef-cream p-3 rounded-full text-chef-terracotta hover:bg-chef-terracotta hover:text-white transition-colors"
-                aria-label="Facebook"
+                aria-label="Linkedin"
               >
-                <Facebook className="w-5 h-5" />
+                <Linkedin className="w-5 h-5" />
               </a>
               {/* <a 
                 href={links.twitter} 
@@ -96,13 +106,6 @@ const Contact = () => {
               >
                 <Twitter className="w-5 h-5" />
               </a> */}
-              <a 
-                href={links.youtube} 
-                className="bg-chef-cream p-3 rounded-full text-chef-terracotta hover:bg-chef-terracotta hover:text-white transition-colors"
-                aria-label="YouTube"
-              >
-                <Youtube className="w-5 h-5" />
-              </a>
             </div>
           </div>
         </div>
